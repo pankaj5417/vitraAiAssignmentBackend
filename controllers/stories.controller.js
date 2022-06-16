@@ -18,11 +18,10 @@ const MyTopStories = async (req, res) => {
     );
 
    
-  return res.status(200).json({stores:dataArr,url:dataArr[0].url});
+  return res.status(200).json({stories:dataArr});
 };
 
 const MyBestStories = async (req, res) => {
-    async function getData() {
   
       const rt = await axios.get(
         "https://hacker-news.firebaseio.com/v0/beststories.json?print=pretty"
@@ -38,15 +37,11 @@ const MyBestStories = async (req, res) => {
         })
       );
   
-      return dataArr;
-    }
-    const val = await getData();
-    console.log(val);
-    return res.status(200).json(val);
+    
+    return res.status(200).json({stories:dataArr});
   };
 
   const MyNewStories = async (req, res) => {
-    async function getData() {
   
       const rt = await axios.get(
         "https://hacker-news.firebaseio.com/v0/newstories.json?print=pretty"
@@ -62,11 +57,8 @@ const MyBestStories = async (req, res) => {
         })
       );
   
-      return dataArr;
-    }
-    const val = await getData();
-    console.log(val);
-    return res.status(200).json(val);
+   
+    return res.status(200).json({stories:dataArr});
   };
   
 module.exports = { MyTopStories,MyBestStories,MyNewStories };
