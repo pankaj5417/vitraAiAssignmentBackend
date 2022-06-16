@@ -2,8 +2,10 @@ const express=require("express");
 const mongoose=require("mongoose");
 const fetch =require("node-fetch");
 const axios=require("axios")
+const dotenv = require("dotenv");
+var cors = require("cors");
 //const routes=require("./routes/stories.route")
-
+dotenv.config();
 const controller= require('./controllers/stories.controller');
 const app=express();
 
@@ -11,7 +13,7 @@ const app=express();
 //require(dotenv.configs())
 const port=8000||process.env.PORT;
 //mongoose.connect("")
-app.listen(8000,()=>{
+app.listen(port,()=>{
     console.log("Server is running on port 8000")
 })
 app.use(express.json());
