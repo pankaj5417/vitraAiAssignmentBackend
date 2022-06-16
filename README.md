@@ -4,24 +4,24 @@
 * Node
 * Express
 ### Deployed link of heroku
+
  https://news-stories2.herokuapp.com/
  
  To test api
    ``` 
-   MyTopStories Api  https://news-stories2.herokuapp.com/topStories
-   MyBestStories Api  https://news-stories2.herokuapp.com/bestStories
+   MyTopStories Api :  https://news-stories2.herokuapp.com/topStories
+  
+   MyBestStories Api:  https://news-stories2.herokuapp.com/bestStories
 
-   MyNewStories Api  https://news-stories2.herokuapp.com/newStories
+   MyNewStories Api:  https://news-stories2.herokuapp.com/newStories
 
 
    ``` 
 
 ## Getting Started :
 
-
 ### Prerequisites 
 * VS Code
-
 
 ### Installation 
 * Clone the repository
@@ -30,7 +30,6 @@
     ```
 To run on local server
 
- ### open  terminal for server
- * cd/server
+### open  terminal for server
  * npm i
  * npm start
