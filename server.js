@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.json());
 
 //app.use("/",routes)
-app.get('/top', controller.MyTopStories);
+app.get('/', controller.MyTopStories);
 
 app.get('/bestStories', controller.MyBestStories);
 app.get('/newStories', controller.MyNewStories);
