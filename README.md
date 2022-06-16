@@ -9,7 +9,7 @@
  
  To test api
    ``` 
-   MyTopStories Api :  https://news-stories2.herokuapp.com/topStories
+   MyTopStories Api :  https://news-stories2.herokuapp.com
   
    MyBestStories Api:  https://news-stories2.herokuapp.com/bestStories
 
