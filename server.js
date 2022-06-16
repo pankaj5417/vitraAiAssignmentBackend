@@ -11,11 +11,10 @@ const app=express();
 
 
 //require(dotenv.configs())
-const port=8000||process.env.PORT;
+const port = process.env.PORT || 8000;
 //mongoose.connect("")
-app.listen(port,()=>{
-    console.log("Server is running on port 8000")
-})
+app.use(cors())
+
 app.use(express.json());
 
 //app.use("/",routes)
@@ -23,3 +22,7 @@ app.get('/top', controller.MyTopStories);
 
 app.get('/bestStories', controller.MyBestStories);
 app.get('/newStories', controller.MyNewStories);
+
+app.listen(port,()=>{
+    console.log("Server is running on port 8000")
+})
